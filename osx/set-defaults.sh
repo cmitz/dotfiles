@@ -8,7 +8,7 @@
 #
 
 # Set computer name
-COMPUTERNAME="Nick Plekhanov's MBP"
+COMPUTERNAME="Casper Smits' MBP"
 HOSTNAME='mbp'
 LOCALHOSTNAME='mbp'
 
@@ -73,7 +73,6 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Disable some menu bar icons: Time Machine, Volume and User
 for domain in ~/Library/Preferences/ByHost/com.apple.stytemuiserver.*; do
   "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-  "/System/Library/CoreServices/Menu Extras/Volume.menu" \
   "/System/Library/CoreServices/Menu Extras/User.menu"
 done
 
@@ -108,13 +107,12 @@ defaults -currentHost write com.apple.trackpad.enableSecondaryClick -bool true
 defaults write -g KeyRepeat -int 0
 
 # Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g ApplePressAndHoldEnabaled -bool false
 
 # Set language and text formats. (USD and Imperial Units)
 defaults write -g AppleLanguages -array "en" "nl"
-defaults write -g AppleLocale -string "en_US@currency=USD"
-defaults write -g AppleMeasurementUnits -string "Inches"
-defaults write -g AppleMetricUnits -bool false
+defaults write -g AppleLocale -string "nl_NL@currency=EUR"
+defaults write -g AppleMetricUnits -bool true
 
 ###############################################################################
 # Screen
@@ -132,8 +130,8 @@ defaults write -g AppleMetricUnits -bool false
 #  10: Put display to sleep
 #  11: Launchpad
 #  12: Notification Center
-# defaults write com.apple.dock wvous-bl-corner -int 5
-# defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Require password immediately after sleep or screen saver.
 defaults write com.apple.screensaver askForPassword -int 1
@@ -185,7 +183,7 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Enable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
