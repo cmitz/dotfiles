@@ -28,8 +28,7 @@
     enableBackgroundColor: false
   jshint:
     supportLintingJsx: true
-  linter:
-    showErrorPanel: false
+  linter: {}
   "markdown-preview":
     useGitHubStyle: true
   minimap:
