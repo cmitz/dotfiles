@@ -29,6 +29,7 @@
   jshint:
     supportLintingJsx: true
   linter: {}
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   minimap:
