@@ -3,6 +3,10 @@
   core:
     disabledPackages: [
       "react"
+      "linter-slim"
+    ]
+    ignoredNames: [
+      "font-awesome-5-pro"
     ]
     telemetryConsent: "no"
     themes: [
@@ -29,7 +33,8 @@
   jshint:
     supportLintingJsx: true
   linter: {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:

@@ -46,6 +46,10 @@ alias vagdestroy='vagrant destroy'
 alias vagssh='vagrant ssh'
 alias vaghalt='vagrant halt'
 
+# Rails stuff
+alias be='bundle exec'
+alias bi='bundle install'
+
 # Be nice
 alias htop='sudo htop'
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
@@ -204,3 +208,5 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "$method"="lwp-request -m '$method'"
 done
+
+alias "tn"="terminal-notifier -message 'done'"
