@@ -8,6 +8,8 @@
     ignoredNames: [
       "font-awesome-5-pro"
     ]
+    projectHome: "~/src"
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
@@ -25,6 +27,7 @@
     softWrap: true
     softWrapAtPreferredLineLength: true
     tabType: "soft"
+    zoomFontWhenCtrlScrolling: true
   emmet: {}
   "exception-reporting":
     userId: "0f4e16a3-5040-01ba-b000-a0793a69fb44"
@@ -33,15 +36,19 @@
   jshint:
     supportLintingJsx: true
   linter: {}
+  "linter-eslint": {}
   "linter-ui-default":
+    panelHeight: 99
     showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
     plugins:
-      "highlight-selected": true
+      "highlight-selected": false
       "highlight-selectedDecorationsZIndex": 0
-      pigments: true
+      pigments: false
       pigmentsDecorationsZIndex: 0
       selection: true
       selectionDecorationsZIndex: 0
