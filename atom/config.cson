@@ -16,7 +16,6 @@
       "cobalt2-syntax"
     ]
   editor:
-    fontFamily: "Menlo"
     fontSize: 11
     invisibles:
       cr: " "
