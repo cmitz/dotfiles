@@ -31,24 +31,10 @@ So, to recap, the install script will:
 ## Installation
 
 ```sh
-$ git clone https://github.com/nicksp/dotfiles.git ~/dotfiles
+$ git clone https://github.com/cmitz/dotfiles.git ~/dotfiles
 $ cd ~/dotfiles
 $ chmod +x setup.sh
 $ ./setup.sh
-```
-
-## Remotely install using curl
-
-Alternatively, you can install this into `~/dotfiles` remotely without Git using curl:
-
-```sh
-sh -c "`curl -fsSL https://raw.github.com/nicksp/dotfiles/master/remote-setup.sh`"
-```
-
-Or, using wget:
-
-```sh
-sh -c "`wget -O - --no-check-certificate https://raw.githubusercontent.com/nicksp/dotfiles/master/remote-setup.sh`"
 ```
 
 ## Customize

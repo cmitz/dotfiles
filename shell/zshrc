@@ -39,9 +39,6 @@ export PATH
 # time that oh-my-zsh is loaded.
 ZSH_THEME="lime"
 
-# Z beats cd most of the time
-. ~/z/z.sh
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -99,6 +96,11 @@ source $ZSH/oh-my-zsh.sh
 # npm tab completion
 . <(npm completion)
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
+. /usr/local/etc/profile.d/z.sh
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+eval "$(rbenv init -)"

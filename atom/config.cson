@@ -7,6 +7,7 @@
     ]
     ignoredNames: [
       "font-awesome-5-pro"
+      "node_modules"
     ]
     projectHome: "~/src"
     restorePreviousWindowsOnStart: "no"
@@ -16,7 +17,7 @@
       "cobalt2-syntax"
     ]
   editor:
-    fontSize: 11
+    fontSize: 12
     invisibles:
       cr: " "
       eol: " "

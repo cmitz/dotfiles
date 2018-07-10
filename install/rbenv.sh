@@ -5,15 +5,17 @@
 # rvm is installed by the Homebrew install script.
 #
 
-if test ! $(which rvm)
+if test ! $(which rbenv)
 then
-  echo "Installing Ruby 2.4.1..."
+  echo "Installing Ruby 2.5.1..."
 
   # Install the latest stable version of node
-  rvm install 2.4.1 --default
+  rbenv install 2.5.1
 
   # Switch to the installed version
-  rvm use 2.4.1
+  rbenv global 2.5.1
+
+  rbenv init
 
 fi
 

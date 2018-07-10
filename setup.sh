@@ -304,6 +304,7 @@ install_zsh () {
 # Package managers & packages
 
 . "$DOTFILES_DIR/install/brew.sh"
+. "$DOTFILES_DIR/install/rbenv.sh"
 . "$DOTFILES_DIR/install/npm.sh"
 
 if [ "$(uname)" == "Darwin" ]; then
@@ -311,7 +312,7 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 main
-# install_zsh
+install_zsh
 
 ###############################################################################
 # Atom                                                                        #
@@ -329,7 +330,7 @@ apm install --packages-file $HOME/.atom/packages.list
 ###############################################################################
 
 # Install Zsh settings
-ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
+ln -s ~/dotfiles/zsh/themes/lime.zsh-theme $HOME/.oh-my-zsh/themes
 
 
 ###############################################################################

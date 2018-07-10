@@ -54,4 +54,4 @@ packages=(
     yo
 )
 
-npm install -g "${packages[@]}"
+yarn global add "${packages[@]}"
