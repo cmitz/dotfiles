@@ -2,7 +2,6 @@
   autoprefixer: {}
   core:
     disabledPackages: [
-      "react"
       "linter-slim"
     ]
     ignoredNames: [
@@ -17,7 +16,7 @@
       "cobalt2-syntax"
     ]
   editor:
-    fontSize: 12
+    fontSize: 10
     invisibles:
       cr: " "
       eol: " "
@@ -39,7 +38,6 @@
   "linter-eslint": {}
   "linter-ui-default":
     panelHeight: 99
-    showPanel: true
   "markdown-preview":
     useGitHubStyle: true
   minimap:
@@ -73,6 +71,10 @@
 ".csx.source":
   editor:
     preferredLineLength: 120
+".editorconfig.source":
+  editor:
+    softWrapAtPreferredLineLength: false
+    tabType: "auto"
 ".git-commit.text":
   editor:
     preferredLineLength: 120
